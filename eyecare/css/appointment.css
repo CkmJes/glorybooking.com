@@ -1,0 +1,150 @@
+/* Appointment Section */
+.appointment-section {
+  /* padding: 80px 20px; */
+  background: linear-gradient(to bottom right, #f0f6ff, #e8edff);
+  /* font-family: "Poppins", sans-serif; */
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.section-header {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.section-header h2 {
+  font-size: 32px;
+  font-weight: bold;
+  color: #222;
+}
+
+.section-header p {
+  font-size: 18px;
+  color: #000;
+  max-width: 700px;
+  margin: 10px auto 0;
+}
+
+.appointment-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+}
+
+.form-card, .info-card, .highlight-card {
+  background: #fff;
+  border-radius: 15px;
+  padding: 25px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.form-card h3, .info-card h3, .highlight-card h3 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: #000;
+    font-family: system-ui;
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  font-weight: 500;
+  margin-bottom: 8px;
+  color: #444;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  width: 100%;
+  padding: 12px 14px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 15px;
+  outline: none;
+  transition: border 0.3s, box-shadow 0.3s;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 0 2px rgba(0,123,255,0.2);
+}
+
+.btn-primary {
+  /* width: 100%; */
+  padding: 15px;
+  background: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.info-card p i {
+    font-size: 20px;
+    color: #007bff;
+}
+
+.highlight-card ul {
+    list-style: none;
+}
+.btn-primary:hover {
+  background: #0056b3;
+}
+
+/* Info Section */
+.info-section {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.info-item {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 8px;
+  font-size: 15px;
+  color: #333;
+}
+
+.note {
+  font-size: 13px;
+  color: #777;
+  margin-top: 10px;
+}
+
+.highlight-card {
+  background: #007bff;
+  color: #fff;
+}
+
+.highlight-card ul {
+  margin: 10px 0 0 20px;
+}
+
+.highlight-card li {
+  margin-bottom: 8px;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .appointment-grid {
+    grid-template-columns: 1fr;
+  }
+}
